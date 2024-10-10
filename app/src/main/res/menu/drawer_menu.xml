@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/language"
+        android:icon="@drawable/round_language_24"
+        android:title="زبان" />
+    <item
+        android:id="@+id/textSize"
+        android:icon="@drawable/baseline_format_size_24"
+        android:title="سایز متن" />
+
+    <item
+        android:id="@+id/nightMode"
+        android:icon="@drawable/round_nights_stay_24"
+        android:title="حالت شب"
+        app:actionLayout="@layout/switch_item" />
+    <item
+        android:id="@+id/clearCatch"
+        android:icon="@drawable/baseline_delete_24"
+        android:title="پاکسازی حافظه" />
+
+</menu>
