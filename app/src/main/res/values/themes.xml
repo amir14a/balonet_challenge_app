@@ -1,6 +1,6 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Base.Theme.BalonetChallengeApplication" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.BalonetChallengeApplication" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/appPrimaryColor</item>
         <item name="android:layoutDirection">rtl</item>
