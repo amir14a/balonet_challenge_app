@@ -1,4 +1,4 @@
-package com.aaj.balonetchallengeapplication
+package com.aaj.balonetchallengeapplication.view.activity
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -6,7 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.aaj.balonetchallengeapplication.R
 import com.aaj.balonetchallengeapplication.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
