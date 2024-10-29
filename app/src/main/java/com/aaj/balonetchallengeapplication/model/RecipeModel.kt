@@ -2,6 +2,7 @@ package com.aaj.balonetchallengeapplication.model
 
 import androidx.room.Entity
 import androidx.room.ForeignKey
+import androidx.room.Ignore
 import androidx.room.PrimaryKey
 
 @Entity(
@@ -21,9 +22,11 @@ data class RecipeModel(
     val imageUrl: String?,
     val imageBlurHash: String?,
     val cookTimeMinutes: Int,
-    val ingredients: List<IngredientModel>,
     val cookingSteps: List<String>,
     val personsCount: Int = 1,
     val likesCount: Int = 0,
     val commentsCount: Int = 0,
-)
+) {
+    @Ignore
+    val ingredients: List<IngredientModel> = listOf()
+}
