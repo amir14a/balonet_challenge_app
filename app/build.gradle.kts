@@ -48,6 +48,7 @@ kapt {
 }
 
 dependencies {
+    //UI
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -59,6 +60,9 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.lifecycle.livedata.ktx)
     kapt(libs.androidx.lifecycle.compiler)
+    implementation(libs.coil)
+    implementation(libs.coil.network.okhttp)
+    implementation(libs.blurhash.android)
 
     //ROOM
     implementation(libs.androidx.room.runtime)

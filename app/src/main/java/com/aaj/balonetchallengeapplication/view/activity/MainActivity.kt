@@ -5,8 +5,10 @@ import androidx.activity.enableEdgeToEdge
 import androidx.core.view.GravityCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.aaj.balonetchallengeapplication.R
 import com.aaj.balonetchallengeapplication.databinding.ActivityMainBinding
+import com.aaj.balonetchallengeapplication.view.adapter.CategoriesAdapter
 import com.aaj.balonetchallengeapplication.viewmodel.MainActivityViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -23,12 +25,21 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainActivityViewModel>(
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        viewModel.fetchCategories()
-
         binding.menuButton.setOnClickListener {
             binding.drawerLayout.openDrawer(GravityCompat.START)
         }
+
+        viewModel.fetchCategories()
+        viewModel.categories.observe(this) {
+            if (!it.isNullOrEmpty()) {
+                val adapter = CategoriesAdapter(it) { category ->
+                    //TODO: Navigate to foods activity
+                }
+                binding.categoriesRecyclerView.layoutManager = LinearLayoutManager(this)
+                binding.categoriesRecyclerView.adapter = adapter
+            }
+        }
+
     }
 
     override fun onBackPressed() {
