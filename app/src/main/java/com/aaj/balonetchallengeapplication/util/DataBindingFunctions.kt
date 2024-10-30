@@ -1,7 +1,9 @@
 package com.aaj.balonetchallengeapplication.util
 
 import android.graphics.drawable.Drawable
+import android.util.TypedValue
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.databinding.BindingAdapter
 import coil3.load
 import coil3.request.crossfade
@@ -25,5 +27,19 @@ object DataBindingFunctions {
                     error(blurHashDrawable as Drawable)
                 }
             }
+    }
+
+    @JvmStatic
+    @BindingAdapter("customTextSize")
+    fun setTextSize(textView: TextView, textSize: AppTextSizes) {
+        var size = StaticParameters.appDefaultTextSize
+        size += when (textSize) {
+            AppTextSizes.VERY_SMALL -> 0
+            AppTextSizes.SMALL -> 2
+            AppTextSizes.NORMAL -> 4
+            AppTextSizes.LARGE -> 6
+            AppTextSizes.VERY_LARGE -> 10
+        }
+        textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, size)
     }
 }

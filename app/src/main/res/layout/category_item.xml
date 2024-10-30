@@ -5,6 +5,8 @@
 
     <data>
 
+        <import type="com.aaj.balonetchallengeapplication.util.AppTextSizes" />
+
         <variable
             name="item"
             type="com.aaj.balonetchallengeapplication.model.CategoryModel" />
@@ -58,6 +60,7 @@
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
+                    bind:customTextSize="@{AppTextSizes.LARGE}"
                     bind:text="نام دسته‌بندی" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
