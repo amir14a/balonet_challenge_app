@@ -1,9 +1,11 @@
 package com.aaj.balonetchallengeapplication.util
 
+import android.graphics.drawable.Drawable
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
 import coil3.load
 import coil3.request.crossfade
+import coil3.request.error
 import coil3.request.placeholder
 import coil3.size.Scale
 import com.dede.blurhash_android.BlurHashDrawable
@@ -20,7 +22,7 @@ object DataBindingFunctions {
                 if (!blurHashString.isNullOrBlank()) {
                     val blurHashDrawable = BlurHashDrawable(blurHashString)
                     placeholder(blurHashDrawable)
-                    error(blurHashDrawable)
+                    error(blurHashDrawable as Drawable)
                 }
             }
     }

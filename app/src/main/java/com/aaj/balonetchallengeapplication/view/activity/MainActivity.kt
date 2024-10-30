@@ -28,7 +28,6 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainActivityViewModel>(
         binding.menuButton.setOnClickListener {
             binding.drawerLayout.openDrawer(GravityCompat.START)
         }
-
         viewModel.fetchCategories()
         viewModel.categories.observe(this) {
             if (!it.isNullOrEmpty()) {

@@ -86,7 +86,6 @@
             android:layout_gravity="start"
             android:fitsSystemWindows="true"
             android:foregroundGravity="right"
-            android:layoutDirection="rtl"
             app:headerLayout="@layout/drawer_header"
             app:menu="@menu/drawer_menu" />
 

@@ -1,6 +1,7 @@
 package com.aaj.balonetchallengeapplication.view.activity
 
 import android.os.Bundle
+import android.view.View
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
@@ -18,6 +19,7 @@ open class BaseActivity<T : ViewDataBinding, T2 : AndroidViewModel>(
     lateinit var viewModel: T2
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        window.decorView.layoutDirection = View.LAYOUT_DIRECTION_RTL
 
         viewModel = ViewModelProvider(this)[clazz]
         binding = DataBindingUtil.setContentView(this, resId)
