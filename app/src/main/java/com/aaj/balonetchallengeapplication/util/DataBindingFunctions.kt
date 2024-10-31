@@ -18,13 +18,15 @@ object DataBindingFunctions {
     @BindingAdapter(value = ["app:imageUrl", "app:blurHashString"])
     fun setImage(imageView: ImageView, url: String?, blurHashString: String?) {
         if (!url.isNullOrBlank())
-            imageView.load(url) {
-                crossfade(500)
-                scale(Scale.FILL)
-                if (!blurHashString.isNullOrBlank()) {
-                    val blurHashDrawable = BlurHashDrawable(blurHashString)
-                    placeholder(blurHashDrawable)
-                    error(blurHashDrawable as Drawable)
+            imageView.post {
+                imageView.load(url) {
+                    crossfade(500)
+                    scale(Scale.FILL)
+                    if (!blurHashString.isNullOrBlank()) {
+                        val blurHashDrawable = BlurHashDrawable(blurHashString)
+                        placeholder(blurHashDrawable)
+                        error(blurHashDrawable as Drawable)
+                    }
                 }
             }
     }

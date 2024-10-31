@@ -4,4 +4,7 @@
     <string name="ingredients">مواد اولیه</string>
     <string name="Recipe">دستور پخت</string>
     <string name="as_you_needed">as you needed</string>
+    <string name="Search">جست‌و‌جو</string>
+    <string name="whatToCook">چی بپزم</string>
+    <string name="profile">پروفایل</string>
 </resources>
