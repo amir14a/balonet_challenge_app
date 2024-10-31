@@ -19,6 +19,8 @@ class CategoriesAdapter(
         }
     }
 
+    override fun getItemViewType(position: Int): Int = position
+    override fun getItemId(position: Int): Long = position.toLong()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoriesAdapterViewHolder {
         val binding =
             CategoryItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)

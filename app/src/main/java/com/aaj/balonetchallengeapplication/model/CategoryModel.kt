@@ -2,6 +2,7 @@ package com.aaj.balonetchallengeapplication.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.io.Serializable
 
 @Entity(tableName = "Categories")
 data class CategoryModel(
@@ -9,4 +10,4 @@ data class CategoryModel(
     val title: String,
     val imageUrl: String?,
     val imageBlurHash: String?,
-)
+) : Serializable

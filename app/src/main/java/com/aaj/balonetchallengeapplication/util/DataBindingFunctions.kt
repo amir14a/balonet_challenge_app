@@ -15,7 +15,7 @@ import com.dede.blurhash_android.BlurHashDrawable
 object DataBindingFunctions {
 
     @JvmStatic
-    @BindingAdapter(value = ["bind:imageUrl", "bind:blurHashString"])
+    @BindingAdapter(value = ["app:imageUrl", "app:blurHashString"])
     fun setImage(imageView: ImageView, url: String?, blurHashString: String?) {
         if (!url.isNullOrBlank())
             imageView.load(url) {
@@ -30,11 +30,11 @@ object DataBindingFunctions {
     }
 
     @JvmStatic
-    @BindingAdapter("customTextSize")
+    @BindingAdapter("app:customTextSize")
     fun setTextSize(textView: TextView, textSize: AppTextSizes) {
         var size = StaticParameters.appDefaultTextSize
         size += when (textSize) {
-            AppTextSizes.VERY_SMALL -> 0
+            AppTextSizes.VERY_SMALL -> -4
             AppTextSizes.SMALL -> 2
             AppTextSizes.NORMAL -> 4
             AppTextSizes.LARGE -> 6

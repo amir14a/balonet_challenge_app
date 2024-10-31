@@ -7,5 +7,21 @@
         <item name="fontFamily">@font/vazirmatn</item>
     </style>
 
+    <style name="AppTextThemePrimary" parent="Base.Theme.BalonetChallengeApplication">
+        <item name="android:textColor">@color/textPrimaryLight</item>
+    </style>
+
+    <style name="AppTextThemeSecondary" parent="Base.Theme.BalonetChallengeApplication">
+        <item name="android:textColor">@color/textSecondaryLight</item>
+    </style>
+
+    <style name="TintTextPrimary" parent="Base.Theme.BalonetChallengeApplication">
+        <item name="android:tint">@color/textPrimaryLight</item>
+    </style>
+
+    <style name="TintTextSecondary" parent="Base.Theme.BalonetChallengeApplication">
+        <item name="android:tint">@color/textSecondaryLight</item>
+    </style>
+
     <style name="Theme.BalonetChallengeApplication" parent="Base.Theme.BalonetChallengeApplication" />
 </resources>

@@ -4,6 +4,7 @@ import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.Ignore
 import androidx.room.PrimaryKey
+import java.io.Serializable
 
 @Entity(
     tableName = "Recipes",
@@ -26,7 +27,10 @@ data class RecipeModel(
     val personsCount: Int = 1,
     val likesCount: Int = 0,
     val commentsCount: Int = 0,
-) {
+) : Serializable {
     @Ignore
-    val ingredients: List<IngredientModel> = listOf()
+    var ingredients: List<IngredientModel> = listOf()
+
+    @Ignore
+    var category: CategoryModel? = null
 }
