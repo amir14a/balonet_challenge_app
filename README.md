@@ -31,12 +31,10 @@ You can download final apk here.
 - [🤖 Download apk for android 🤖](https://github.com/amir14a/balonet_challenge_app/releases/latest)
 
 ## Screenshots
-![photo_2024-10-31_22-59-16](https://github.com/user-attachments/assets/f1b825ff-8f34-4653-9e65-28fa32c46987)
-![photo_2024-10-31_22-58-26](https://github.com/user-attachments/assets/1b1b25aa-3998-4cbb-a117-0e44fe55260b)
-![photo_2024-10-31_22-57-54](https://github.com/user-attachments/assets/921fba44-b683-4068-a141-d95806ec863a)
-![photo_2024-10-31_22-56-47](https://github.com/user-attachments/assets/0c83e1ee-52e4-454c-902c-528d8aa3dd42)
-
-
+<a href="https://github.com/user-attachments/assets/0c83e1ee-52e4-454c-902c-528d8aa3dd42"><img src="https://github.com/user-attachments/assets/0c83e1ee-52e4-454c-902c-528d8aa3dd42" width="200" ></a>
+<a href="https://github.com/user-attachments/assets/921fba44-b683-4068-a141-d95806ec863a"><img src="https://github.com/user-attachments/assets/921fba44-b683-4068-a141-d95806ec863a" width="200" ></a>
+<a href="https://github.com/user-attachments/assets/f1b825ff-8f34-4653-9e65-28fa32c46987"><img src="https://github.com/user-attachments/assets/f1b825ff-8f34-4653-9e65-28fa32c46987" width="200" ></a>
+<a href="https://github.com/user-attachments/assets/1b1b25aa-3998-4cbb-a117-0e44fe55260b"><img src="https://github.com/user-attachments/assets/1b1b25aa-3998-4cbb-a117-0e44fe55260b" width="200" ></a>
 
 ## Notes:
 
