@@ -35,9 +35,9 @@ object DataBindingFunctions {
         var size = StaticParameters.appDefaultTextSize
         size += when (textSize) {
             AppTextSizes.VERY_SMALL -> -4
-            AppTextSizes.SMALL -> 2
+            AppTextSizes.SMALL -> 0
             AppTextSizes.NORMAL -> 4
-            AppTextSizes.LARGE -> 6
+            AppTextSizes.LARGE -> 8
             AppTextSizes.VERY_LARGE -> 10
         }
         textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, size)
