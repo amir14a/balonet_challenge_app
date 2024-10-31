@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.aaj.balonetchallengeapplication.util.AppTextSizes" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="item"
+            type="com.aaj.balonetchallengeapplication.model.RecipeIngredientsModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{item.ingredient.nameEnglish}"
+            android:theme="@style/AppTextThemePrimary"
+            app:customTextSize="@{AppTextSizes.NORMAL}"
+            tools:text="IngredientName" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{(item.amount==0)?``:(``+item.amount+` `+item.ingredient.unitEnglish)}"
+            android:theme="@style/AppTextThemePrimary"
+            app:customTextSize="@{AppTextSizes.NORMAL}"
+            tools:text="15 Grams" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/as_you_needed"
+            android:theme="@style/AppTextThemePrimary"
+            android:visibility="@{(item.amount==0)?View.VISIBLE:View.GONE}"
+            app:customTextSize="@{AppTextSizes.NORMAL}" />
+    </LinearLayout>
+</layout>

@@ -2,11 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="toolbarBg">#FFFFFFFF</color>
-    <color name="toolbarItem">#121212</color>
+    <color name="toolbarBg">#121212</color>
+    <color name="toolbarItem">#fff</color>
     <color name="appPrimaryColor">#FFf8bc14</color>
     <color name="appPrimaryColorForText">#BF910F</color>
-    <color name="windowBackground">#E7E7E7</color>
-    <color name="textPrimaryColor">#000000</color>
-    <color name="textSecondaryColor">#BABABA</color>
+    <color name="windowBackground">#262626</color>
+    <color name="textPrimaryColor">#fff</color>
+    <color name="textSecondaryColor">#aaa</color>
 </resources>

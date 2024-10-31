@@ -4,20 +4,19 @@
     <item
         android:id="@+id/language"
         android:icon="@drawable/round_language_24"
-        android:title="زبان" />
+        android:title="@string/changeLanguageTo" />
     <item
         android:id="@+id/textSize"
         android:icon="@drawable/baseline_format_size_24"
-        android:title="سایز متن" />
+        android:title="@string/changeTextSize" />
 
     <item
         android:id="@+id/nightMode"
         android:icon="@drawable/round_nights_stay_24"
-        android:title="حالت شب"
+        android:title="@string/nightMode"
         app:actionLayout="@layout/switch_item" />
     <item
-        android:id="@+id/clearCatch"
+        android:id="@+id/clearCache"
         android:icon="@drawable/baseline_delete_24"
-        android:title="پاکسازی حافظه" />
-
+        android:title="@string/clearCatch" />
 </menu>

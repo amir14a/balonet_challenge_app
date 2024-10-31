@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.aaj.balonetchallengeapplication.util.AppTextSizes" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="item"
+            type="String" />
+
+        <variable
+            name="position"
+            type="Integer" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{``+(position+1)}"
+            android:textColor="@color/appPrimaryColorForText"
+            android:textStyle="bold"
+            app:customTextSize="@{AppTextSizes.LARGE}"
+            tools:text="1"
+            tools:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@{item}"
+            android:theme="@style/AppTextThemePrimary"
+            app:customTextSize="@{AppTextSizes.NORMAL}"
+            tools:maxLines="4"
+            tools:text="@tools:sample/lorem/random" />
+    </LinearLayout>
+</layout>

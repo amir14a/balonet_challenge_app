@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <import type="com.aaj.balonetchallengeapplication.util.AppTextSizes" />
+
+        <variable
+            name="view"
+            type="com.aaj.balonetchallengeapplication.view.activity.CategoryActivity" />
+
+        <variable
+            name="viewModel"
+            type="com.aaj.balonetchallengeapplication.viewmodel.CategoryActivityViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBackground"
+        tools:context=".view.activity.CategoryActivity">
+
+        <LinearLayout
+            android:id="@+id/mainToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/toolbarBg"
+            android:elevation="8dp"
+            android:gravity="center|start"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/menuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:tint="@color/toolbarItem"
+                android:background="?selectableItemBackgroundBorderless"
+                android:onClick="@{()->view.finish()}"
+                android:src="@drawable/ic_arrow_back_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel.category.titleEnglish}"
+                android:textStyle="bold"
+                android:theme="@style/AppTextThemePrimary"
+                app:customTextSize="@{AppTextSizes.VERY_LARGE}"
+                tools:text="CategoryName"
+                tools:textSize="22sp" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/categoriesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingHorizontal="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainToolbar"
+            tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/recipe_item"
+            tools:spanCount="2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

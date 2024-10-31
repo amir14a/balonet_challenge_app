@@ -1,10 +1,27 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.BalonetChallengeApplication" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
+    <style name="Base.Theme.BalonetChallengeApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/appPrimaryColor</item>
-        <item name="android:layoutDirection">rtl</item>
+        <item name="colorAccent">@color/appPrimaryColorForText</item>
         <item name="android:fitsSystemWindows">true</item>
+        <item name="fontFamily">@font/vazirmatn</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="AppTextThemePrimary" parent="Base.Theme.BalonetChallengeApplication">
+        <item name="android:textColor">@color/textPrimaryColor</item>
+    </style>
+
+    <style name="AppTextThemeSecondary" parent="Base.Theme.BalonetChallengeApplication">
+        <item name="android:textColor">@color/textSecondaryColor</item>
+    </style>
+
+    <style name="TintTextPrimary" parent="Base.Theme.BalonetChallengeApplication">
+        <item name="android:tint">@color/textPrimaryColor</item>
+    </style>
+
+    <style name="TintTextSecondary" parent="Base.Theme.BalonetChallengeApplication">
+        <item name="android:tint">@color/textSecondaryColor</item>
     </style>
 
     <style name="Theme.BalonetChallengeApplication" parent="Base.Theme.BalonetChallengeApplication" />

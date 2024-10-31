@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">زردچوبه</string>
+    <string name="author">نام نویسنده</string>
+    <string name="ingredients">مواد اولیه</string>
+    <string name="Recipe">دستور پخت</string>
+    <string name="as_you_needed">به مقدار لازم</string>
+    <string name="Search">جست‌و‌جو</string>
+    <string name="whatToCook">چی بپزم</string>
+    <string name="profile">پروفایل</string>
+    <string name="typeSomethingForSearch">چیزی بنویسید تا جستجو کنیم</string>
+    <string name="noResultForSearch">جستجوی شما نتیجه ای نداشت</string>
+    <string name="changeLanguageTo">تغییر زبان به انگلیسی</string>
+    <string name="changeTextSize">تغییر سایز متن</string>
+    <string name="nightMode">حالت شب</string>
+    <string name="clearCatch">پاکسازی حافظه</string>
+    <string name="login">ورود</string>
+    <string name="cacheRemovedSuccessfully">حافظه کش با موفقیت حذف شد.</string>
+    <string name="failedToClearCache">در فرایند حذف حافظه کش خطایی رخ داد.</string>
+    <string name="changeThisToChangeTextSize">جهت تغییر اندازه متن نشانگر زیر را جابجا کنید.</string>
+    <string name="confirm">تأیید</string>
+</resources>
