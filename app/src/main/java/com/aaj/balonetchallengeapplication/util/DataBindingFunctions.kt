@@ -35,13 +35,7 @@ object DataBindingFunctions {
     @BindingAdapter("app:customTextSize")
     fun setTextSize(textView: TextView, textSize: AppTextSizes) {
         var size = StaticParameters.appDefaultTextSize
-        size += when (textSize) {
-            AppTextSizes.VERY_SMALL -> -4
-            AppTextSizes.SMALL -> 0
-            AppTextSizes.NORMAL -> 4
-            AppTextSizes.LARGE -> 8
-            AppTextSizes.VERY_LARGE -> 10
-        }
+        size += textSize.getDiff()
         textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, size)
     }
 }

@@ -16,4 +16,6 @@
     <string name="login">login</string>
     <string name="cacheRemovedSuccessfully">Cache removed successfully!</string>
     <string name="failedToClearCache">Failed to clear cache :(</string>
+    <string name="changeThisToChangeTextSize">جهت تغییر اندازه متن نشانگر زیر را جابجا کنید.</string>
+    <string name="confirm">تأیید</string>
 </resources>

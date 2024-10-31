@@ -12,6 +12,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.aaj.balonetchallengeapplication.R
 import com.aaj.balonetchallengeapplication.databinding.ActivityMainBinding
 import com.aaj.balonetchallengeapplication.util.StaticParameters
+import com.aaj.balonetchallengeapplication.view.dialog.SelectTextSizeDialog
 import com.aaj.balonetchallengeapplication.viewmodel.MainActivityViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
@@ -40,6 +41,13 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainActivityViewModel>(
                     StaticParameters.isEnglish = !StaticParameters.isEnglish
                     viewModel.saveIsEnglish(StaticParameters.isEnglish)
                     recreate()
+                }
+
+                R.id.textSize -> {
+                    SelectTextSizeDialog(this) {
+                        viewModel.saveTextSize(StaticParameters.appDefaultTextSize)
+                        recreate()
+                    }.show()
                 }
 
                 R.id.clearCache -> {

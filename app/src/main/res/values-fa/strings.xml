@@ -16,4 +16,6 @@
     <string name="login">ورود</string>
     <string name="cacheRemovedSuccessfully">حافظه کش با موفقیت حذف شد.</string>
     <string name="failedToClearCache">در فرایند حذف حافظه کش خطایی رخ داد.</string>
+    <string name="changeThisToChangeTextSize">جهت تغییر اندازه متن نشانگر زیر را جابجا کنید.</string>
+    <string name="confirm">تأیید</string>
 </resources>
