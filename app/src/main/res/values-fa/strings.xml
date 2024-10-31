@@ -9,4 +9,9 @@
     <string name="profile">پروفایل</string>
     <string name="typeSomethingForSearch">چیزی بنویسید تا جستجو کنیم</string>
     <string name="noResultForSearch">جستجوی شما نتیجه ای نداشت</string>
+    <string name="changeLanguageTo">تغییر زبان به انگلیسی</string>
+    <string name="changeTextSize">تغییر سایز متن</string>
+    <string name="nightMode">حالت شب</string>
+    <string name="clearCatch">پاکسازی حافظه</string>
+    <string name="login">ورود</string>
 </resources>

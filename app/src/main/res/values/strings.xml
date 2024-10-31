@@ -9,4 +9,9 @@
     <string name="profile">Profile</string>
     <string name="typeSomethingForSearch">Type something to search</string>
     <string name="noResultForSearch">No result for your search</string>
+    <string name="changeLanguageTo">Change language to Farsi</string>
+    <string name="changeTextSize">Change text size</string>
+    <string name="nightMode">Night mode</string>
+    <string name="clearCatch">Clear cache</string>
+    <string name="login">login</string>
 </resources>
