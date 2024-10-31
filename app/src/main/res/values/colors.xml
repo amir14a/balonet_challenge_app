@@ -3,7 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="appPrimaryColor">#FFf8bc14</color>
-    <color name="backgroundLight">#f5f7f6</color>
+    <color name="appPrimaryColorForText">#BF910F</color>
+    <color name="backgroundLight">#E7E7E7</color>
     <color name="textPrimaryLight">#000000</color>
     <color name="textSecondaryLight">#BABABA</color>
 </resources>

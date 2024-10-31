@@ -2,6 +2,7 @@ package com.aaj.balonetchallengeapplication.model
 
 import androidx.room.Entity
 import androidx.room.ForeignKey
+import androidx.room.Ignore
 import androidx.room.PrimaryKey
 
 @Entity(
@@ -23,5 +24,8 @@ data class RecipeIngredientsModel(
     @PrimaryKey val id: Int,
     val recipeId: Int,
     val ingredientId: Int,
-    val amount: Double,
-)
+    var amount: Double,
+) {
+    @Ignore
+    var ingredient: IngredientModel? = null
+}

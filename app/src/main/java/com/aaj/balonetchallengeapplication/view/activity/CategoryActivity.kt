@@ -1,5 +1,6 @@
 package com.aaj.balonetchallengeapplication.view.activity
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.recyclerview.widget.GridLayoutManager
@@ -26,11 +27,11 @@ class CategoryActivity : BaseActivity<ActivityCategoryBinding, CategoryActivityV
         viewModel.recipes.observe(this) {
             if (!it.isNullOrEmpty()) {
                 val adapter = RecipesAdapter(it) { recipe ->
-//                    startActivity(
-//                        Intent(this, CategoryActivity::class.java).putExtra(
-//                            "Recipe", recipe
-//                        )
-//                    )
+                    startActivity(
+                        Intent(this, RecipeActivity::class.java).putExtra(
+                            "Recipe", recipe
+                        )
+                    )
                 }
                 binding.categoriesRecyclerView.layoutManager = GridLayoutManager(this, 2)
                 binding.categoriesRecyclerView.adapter = adapter
