@@ -1,10 +1,12 @@
 package com.aaj.balonetchallengeapplication.view.activity
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.SwitchCompat
 import androidx.core.view.GravityCompat
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.aaj.balonetchallengeapplication.R
@@ -12,6 +14,9 @@ import com.aaj.balonetchallengeapplication.databinding.ActivityMainBinding
 import com.aaj.balonetchallengeapplication.util.StaticParameters
 import com.aaj.balonetchallengeapplication.viewmodel.MainActivityViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 @AndroidEntryPoint
 class MainActivity : BaseActivity<ActivityMainBinding, MainActivityViewModel>(
@@ -32,6 +37,27 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainActivityViewModel>(
         binding.navView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.clearCache -> {
+                    this.lifecycleScope.launch(Dispatchers.IO) {
+                        try {
+                            applicationContext.cacheDir.deleteRecursively()
+                            withContext(Dispatchers.Main) {
+                                Toast.makeText(
+                                    this@MainActivity,
+                                    getString(R.string.cacheRemovedSuccessfully),
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            }
+
+                        } finally {
+                            withContext(Dispatchers.Main) {
+                                Toast.makeText(
+                                    this@MainActivity,
+                                    getString(R.string.failedToClearCache),
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            }
+                        }
+                    }
                 }
             }
             return@setNavigationItemSelectedListener true

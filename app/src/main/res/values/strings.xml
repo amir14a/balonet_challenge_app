@@ -14,4 +14,6 @@
     <string name="nightMode">Night mode</string>
     <string name="clearCatch">Clear cache</string>
     <string name="login">login</string>
+    <string name="cacheRemovedSuccessfully">Cache removed successfully!</string>
+    <string name="failedToClearCache">Failed to clear cache :(</string>
 </resources>
