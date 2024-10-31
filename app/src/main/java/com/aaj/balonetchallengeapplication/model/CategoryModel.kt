@@ -8,6 +8,7 @@ import java.io.Serializable
 data class CategoryModel(
     @PrimaryKey val id: Int,
     val title: String,
+    val titleEnglish: String,
     val imageUrl: String?,
     val imageBlurHash: String?,
 ) : Serializable

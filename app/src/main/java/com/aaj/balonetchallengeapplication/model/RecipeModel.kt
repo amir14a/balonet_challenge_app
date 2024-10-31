@@ -19,11 +19,13 @@ import java.io.Serializable
 data class RecipeModel(
     @PrimaryKey val id: Int,
     val name: String,
+    val nameEnglish: String,
     val categoryId: Int,
     val imageUrl: String?,
     val imageBlurHash: String?,
     val cookTimeMinutes: Int,
     val cookingSteps: List<String>,
+    val cookingStepsEnglish: List<String>,
     val personsCount: Int = 1,
     val likesCount: Int = 0,
     val commentsCount: Int = 0,

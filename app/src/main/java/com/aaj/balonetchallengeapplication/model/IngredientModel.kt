@@ -7,5 +7,7 @@ import androidx.room.PrimaryKey
 data class IngredientModel(
     @PrimaryKey val id: Int,
     val name: String,
+    val nameEnglish: String,
     val unit: String,
+    val unitEnglish: String,
 )

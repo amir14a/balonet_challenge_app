@@ -38,15 +38,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                app:tint="@color/toolbarItem"
                 android:background="?selectableItemBackgroundBorderless"
                 android:onClick="@{()->view.finish()}"
-                android:src="@drawable/ic_arrow_back_24" />
+                android:src="@drawable/ic_arrow_back_24"
+                app:tint="@color/toolbarItem" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@{viewModel.recipe.nameEnglish}"
+                android:text="@{viewModel.recipe.name}"
                 android:textStyle="bold"
                 android:theme="@style/AppTextThemePrimary"
                 app:customTextSize="@{AppTextSizes.VERY_LARGE}"
@@ -91,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
-                    android:text="@{viewModel.recipe.nameEnglish}"
+                    android:text="@{viewModel.recipe.name}"
                     android:textStyle="bold"
                     android:theme="@style/AppTextThemePrimary"
                     app:customTextSize="@{AppTextSizes.LARGE}"
@@ -102,7 +102,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:text="@{viewModel.recipe.category.titleEnglish}"
+                    android:text="@{viewModel.recipe.category.title}"
                     android:textColor="@color/appPrimaryColorForText"
                     android:textStyle="bold"
                     app:customTextSize="@{AppTextSizes.SMALL}"

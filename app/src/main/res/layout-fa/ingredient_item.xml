@@ -23,7 +23,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{item.ingredient.nameEnglish}"
+            android:text="@{item.ingredient.name}"
             android:theme="@style/AppTextThemePrimary"
             app:customTextSize="@{AppTextSizes.NORMAL}"
             tools:text="IngredientName" />
@@ -36,7 +36,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{(item.amount==0)?``:(``+item.amount+` `+item.ingredient.unitEnglish)}"
+            android:text="@{(item.amount==0)?``:(``+item.amount+` `+item.ingredient.unit)}"
             android:theme="@style/AppTextThemePrimary"
             app:customTextSize="@{AppTextSizes.NORMAL}"
             tools:text="15 Grams" />
