@@ -39,15 +39,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                app:tint="@color/toolbarItem"
                 android:background="?selectableItemBackgroundBorderless"
                 android:onClick="@{()->view.finish()}"
-                android:src="@drawable/ic_arrow_back_24" />
+                android:src="@drawable/ic_arrow_back_24"
+                app:tint="@color/toolbarItem" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@{viewModel.category.titleEnglish}"
+                android:text="@{viewModel.category.title}"
                 android:textStyle="bold"
                 android:theme="@style/AppTextThemePrimary"
                 app:customTextSize="@{AppTextSizes.VERY_LARGE}"

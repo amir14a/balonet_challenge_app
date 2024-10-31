@@ -36,6 +36,12 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainActivityViewModel>(
 
         binding.navView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
+                R.id.language -> {
+                    StaticParameters.isEnglish = !StaticParameters.isEnglish
+                    viewModel.saveIsEnglish(StaticParameters.isEnglish)
+                    recreate()
+                }
+
                 R.id.clearCache -> {
                     this.lifecycleScope.launch(Dispatchers.IO) {
                         try {
