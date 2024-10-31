@@ -1,7 +1,6 @@
 <resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.BalonetChallengeApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/appPrimaryColor</item>
         <item name="colorAccent">@color/appPrimaryColorForText</item>
         <item name="android:fitsSystemWindows">true</item>
@@ -10,19 +9,19 @@
     </style>
 
     <style name="AppTextThemePrimary" parent="Base.Theme.BalonetChallengeApplication">
-        <item name="android:textColor">@color/textPrimaryLight</item>
+        <item name="android:textColor">@color/textPrimaryColor</item>
     </style>
 
     <style name="AppTextThemeSecondary" parent="Base.Theme.BalonetChallengeApplication">
-        <item name="android:textColor">@color/textSecondaryLight</item>
+        <item name="android:textColor">@color/textSecondaryColor</item>
     </style>
 
     <style name="TintTextPrimary" parent="Base.Theme.BalonetChallengeApplication">
-        <item name="android:tint">@color/textPrimaryLight</item>
+        <item name="android:tint">@color/textPrimaryColor</item>
     </style>
 
     <style name="TintTextSecondary" parent="Base.Theme.BalonetChallengeApplication">
-        <item name="android:tint">@color/textSecondaryLight</item>
+        <item name="android:tint">@color/textSecondaryColor</item>
     </style>
 
     <style name="Theme.BalonetChallengeApplication" parent="Base.Theme.BalonetChallengeApplication" />
