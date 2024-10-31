@@ -10,7 +10,8 @@ the zamin company hiring process.
 - Load images from network
 - Manual night mode
 - Two languages for app and database
-- Manually Changing text sizes
+- Manually changing text sizes
+- Fully rtl support for layouts and languages
   
 ## Technologies
 I use these libraries and packages for developing this app:
