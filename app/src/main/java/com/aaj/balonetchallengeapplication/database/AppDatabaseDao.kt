@@ -12,6 +12,9 @@ interface AppDatabaseDao {
     @Query("SELECT * FROM Categories")
     suspend fun getAllCategories(): List<CategoryModel>
 
+    @Query("SELECT * FROM Categories WHERE id=:categoryId")
+    suspend fun getCategoryById(categoryId: Int): CategoryModel
+
     @Query("SELECT * FROM Recipes WHERE categoryId=:categoryId")
     suspend fun getRecipesForCategory(categoryId: Int): List<RecipeModel>
 
@@ -20,4 +23,7 @@ interface AppDatabaseDao {
 
     @Query("SELECT * FROM Ingredients WHERE id=:ingredientId")
     suspend fun getIngredient(ingredientId: Int): IngredientModel
+
+    @Query("SELECT * FROM Recipes WHERE name LIKE '%' || :text || '%'")
+    suspend fun searchForRecipes(text: String): List<RecipeModel>
 }
