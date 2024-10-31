@@ -1,11 +1,11 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.BalonetChallengeApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/appPrimaryColor</item>
         <item name="colorAccent">@color/appPrimaryColorForText</item>
         <item name="android:fitsSystemWindows">true</item>
         <item name="fontFamily">@font/vazirmatn</item>
-
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
     </style>
 
     <style name="AppTextThemePrimary" parent="Base.Theme.BalonetChallengeApplication">
